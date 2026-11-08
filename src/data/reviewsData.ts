@@ -1,0 +1,58 @@
+import { ReviewItem } from '../types/restaurant';
+
+export const REVIEWS_DATA: ReviewItem[] = [
+  {
+    id: 'rev-1',
+    author: 'Debashis Mukherjee',
+    source: 'Google Review',
+    rating: 5,
+    timeAgo: '3 weeks ago',
+    excerpt: 'One of the best stopovers in Sevoke! The steam chicken momos are exceptionally juicy with the spicy red paste, and the hot chicken thukpa after driving along Teesta was heavenly. Ample parking and clean premises.',
+    verifiedVisit: 'Dine-in · Lunch',
+  },
+  {
+    id: 'rev-2',
+    author: 'Priyanka Roy Barman',
+    source: 'Google Review',
+    rating: 4,
+    timeAgo: '1 month ago',
+    excerpt: 'Had their full Chicken Thali and Veg Momos while traveling to Kalimpong. The food tastes genuine, wholesome, and non-greasy. Great view of the forest hills from the corner window seats.',
+    verifiedVisit: 'Dine-in · Dinner',
+  },
+  {
+    id: 'rev-3',
+    author: 'Tenzing Bhutia',
+    source: 'Google Review',
+    rating: 5,
+    timeAgo: '2 months ago',
+    excerpt: 'Authentic Himalayan soul food in Sevoke. The broth in their mixed thukpa is simmered for hours—rich and aromatic without artificial enhancers. Friendly service and reasonable pricing under ₹300 per head.',
+    verifiedVisit: 'Dine-in · Evening Snacks',
+  },
+  {
+    id: 'rev-4',
+    author: 'Sandeep Ghosh',
+    source: 'Google Review',
+    rating: 4,
+    timeAgo: '2 months ago',
+    excerpt: 'Chaasum is our mandatory tea and momo break whenever heading up to Gangtok. Steaming momos with hot Darjeeling lemon tea in the cool forest air hits differently. Highly recommended roadside spot.',
+    verifiedVisit: 'Drive-through / Takeaway',
+  },
+  {
+    id: 'rev-5',
+    author: 'Sunita Tamang',
+    source: 'Google Review',
+    rating: 5,
+    timeAgo: '3 months ago',
+    excerpt: 'Cozy wooden ambiance, attentive staff, and piping hot dishes. The crispy fried momos and butter aloo paratha with curd were delicious. Closes late at 11:30 PM which is a lifesaver for night travelers.',
+    verifiedVisit: 'Dine-in · Late Dinner',
+  },
+  {
+    id: 'rev-6',
+    author: 'Arindam Paul',
+    source: 'Google Review',
+    rating: 4,
+    timeAgo: '4 months ago',
+    excerpt: 'Great Asian flavors in the hills. The chicken wings had a nice spicy crunch, and Hakka noodles were fresh. A peaceful escape right by the Sivok forest reserve.',
+    verifiedVisit: 'Dine-in · Lunch',
+  },
+];

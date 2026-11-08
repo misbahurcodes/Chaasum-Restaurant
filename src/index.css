@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: "Cormorant Garamond", Georgia, serif;
+    --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    --font-devanagari: "Rozha One", "Yatra One", serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0c1411;
+    color: #ede9e1;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+  }
+
+  .font-hindi {
+    font-family: var(--font-devanagari);
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090e0c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #233c32;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #34584a;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

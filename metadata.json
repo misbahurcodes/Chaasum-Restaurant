@@ -1,0 +1,8 @@
+{
+  "name": "CHAASUM RESTAURANT",
+  "description": "CHAASUM (चासुम) Asian Restaurant in Sevoke Bazar, West Bengal. Authentic Himalayan momos, Tibetan thukpa, thalis, and serene dining nestled by the Sivok Hill Forest.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

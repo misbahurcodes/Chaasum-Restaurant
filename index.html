@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Gracefully prevent benign WebSocket disconnection errors from bubbling in preview iframe
+      window.addEventListener('error', function (e) {
+        if (e.message && (e.message.indexOf('WebSocket') !== -1 || e.message.indexOf('createWebSocket') !== -1)) {
+          e.stopImmediatePropagation();
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function (e) {
+        var str = String(e.reason || '');
+        if (str.indexOf('WebSocket') !== -1 || str.indexOf('createWebSocket') !== -1) {
+          e.stopImmediatePropagation();
+        }
+      }, true);
+    </script>
+    <title>CHAASUM RESTAURANT (चासुम) – Asian & Himalayan Dining in Sevoke</title>
+    <meta
+      name="description"
+      content="CHAASUM (चासुम) Asian Restaurant in Sevoke Bazar, West Bengal. Authentic Himalayan momos, Tibetan thukpa, thalis, and serene dining nestled by the Sivok Hill Forest."
+    />
+    <meta property="og:type" content="restaurant.restaurant" />
+    <meta property="og:title" content="CHAASUM RESTAURANT (चासुम) – A Taste Worth Remembering" />
+    <meta
+      property="og:description"
+      content="Experience authentic Himalayan momos, Tibetan thukpa, hearty thalis, and cozy dining nestled in the scenic Sivok Hill Forest, West Bengal."
+    />
+    <meta property="og:site_name" content="CHAASUM RESTAURANT" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CHAASUM RESTAURANT (चासुम) – Asian & Himalayan Dining" />
+    <meta
+      name="twitter:description"
+      content="Savor handcrafted Himalayan momos, Tibetan thukpa, and authentic hospitality in Sevoke, West Bengal. Rated 4.2★ by 2,090+ food lovers."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Rozha+One&family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "CHAASUM RESTAURANT",
+      "alternateName": "चासुम रेस्टोरेंट",
+      "image": "https://ais-dev-x52n6gmvstfvhauyhbjt5e-847102597897.asia-northeast1.run.app/src/assets/images/hero_chaasum_restaurant_1794131815689.jpg",
+      "servesCuisine": ["Asian", "Tibetan", "Himalayan", "Indian"],
+      "priceRange": "₹200 - ₹400",
+      "telephone": "+919907255613",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "VFHC+C82, Sevoke Bazar, Sevoke",
+        "addressLocality": "Sivok Hill Forest",
+        "addressRegion": "West Bengal",
+        "postalCode": "734008",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.8837,
+        "longitude": 88.4682
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.2",
+        "reviewCount": "2091",
+        "bestRating": "5"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "10:30",
+          "closes": "23:30"
+        }
+      ],
+      "acceptsReservations": "True",
+      "hasMenu": "#menu",
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "#reservation",
+          "inLanguage": "en-US",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/MobileWebPlatform"
+          ]
+        },
+        "result": {
+          "@type": "FoodEstablishmentReservation",
+          "name": "Table Reservation at CHAASUM"
+        }
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-[#0b120f] text-[#ede8df] antialiased selection:bg-[#d4af37]/30 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
