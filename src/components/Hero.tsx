@@ -39,11 +39,17 @@ export const Hero: React.FC<HeroProps> = ({ onExploreMenu, onOpenReservation }) 
       {/* Background Cinematic Food & Forest Image with Rich Scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_chaasum_restaurant_1794131815689.jpg"
+          src="/images/hero.jpg"
           alt="Steaming Himalayan Momos and Tibetan Thukpa at Chaasum Restaurant overlooking misty Sevoke forest"
           className="w-full h-full object-cover object-center scale-105 animate-[subtleZoom_20s_ease-in-out_infinite_alternate]"
           referrerPolicy="no-referrer"
           loading="eager"
+          onError={(e) => {
+            const target = e.currentTarget;
+            if (target.src.indexOf('/images/hero.jpg') !== -1) {
+              target.src = '/src/assets/images/hero_chaasum_restaurant_1794131815689.jpg';
+            }
+          }}
         />
         {/* Measured dark gradient overlay ensuring 4.5:1 text contrast */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a120f] via-[#0a120f]/75 to-black/60" />

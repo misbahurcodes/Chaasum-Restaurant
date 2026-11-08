@@ -16,7 +16,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Himalayan Steamed Momos',
     subtitle: 'Freshly pleated with mountain herbs & fiery chili chutney',
     category: 'food',
-    image: '/src/assets/images/momos_steamed_himalayan_1794131815461.jpg',
+    image: '/images/momos.jpg',
     aspect: 'col-span-1 md:col-span-2 row-span-2',
   },
   {
@@ -24,7 +24,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Sivok Hill Forest Ambiance',
     subtitle: 'Panoramic glass dining overlooking misty hill slopes',
     category: 'ambiance',
-    image: '/src/assets/images/chaasum_ambiance_forest_1794131817267.jpg',
+    image: '/images/ambiance.jpg',
     aspect: 'col-span-1 md:col-span-2 row-span-1',
   },
   {
@@ -32,7 +32,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Authentic Tibetan Thukpa',
     subtitle: 'Golden slow-cooked broth with hand-cut noodles and chicken',
     category: 'food',
-    image: '/src/assets/images/tibetan_chicken_thukpa_1794131816807.jpg',
+    image: '/images/thukpa.jpg',
     aspect: 'col-span-1 row-span-1',
   },
   {
@@ -40,7 +40,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Traditional Himalayan Thali',
     subtitle: 'Bronze platter complete feast with aromatic curries',
     category: 'food',
-    image: '/src/assets/images/bengali_himalayan_thali_1794131817124.jpg',
+    image: '/images/thali.jpg',
     aspect: 'col-span-1 row-span-1',
   },
   {
@@ -48,7 +48,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Warm Hearth & Forest Window',
     subtitle: 'Steaming bamboo baskets and oil lamps by the mountain window',
     category: 'ambiance',
-    image: '/src/assets/images/hero_chaasum_restaurant_1794131815689.jpg',
+    image: '/images/hero.jpg',
     aspect: 'col-span-1 md:col-span-2 row-span-1',
   },
 ];

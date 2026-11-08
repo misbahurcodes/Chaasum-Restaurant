@@ -123,6 +123,12 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ onSelectDishForReserva
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                   loading="lazy"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (target.src.indexOf('/images/hero.jpg') === -1) {
+                      target.src = '/images/hero.jpg';
+                    }
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#121c17] via-transparent to-black/30 pointer-events-none" />
 
@@ -231,6 +237,12 @@ export const MenuSection: React.FC<MenuSectionProps> = ({ onSelectDishForReserva
                 alt={selectedItem.name}
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src.indexOf('/images/hero.jpg') === -1) {
+                    target.src = '/images/hero.jpg';
+                  }
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#121c17] to-transparent" />
               <button

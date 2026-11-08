@@ -133,6 +133,11 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 app.use(express.json({ limit: '64kb' }));
 app.use(express.urlencoded({ extended: false, limit: '64kb' }));
 
+// Static file serving for images and public assets
+app.use(express.static(path.resolve(process.cwd(), 'public')));
+app.use('/images', express.static(path.resolve(process.cwd(), 'public/images')));
+app.use('/src/assets/images', express.static(path.resolve(process.cwd(), 'public/images')));
+
 // -------------------------------------------------------------
 // 2. IN-MEMORY RATE LIMITING (Token Bucket / Sliding Window)
 // -------------------------------------------------------------

@@ -68,11 +68,17 @@ export const About: React.FC = () => {
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-2xl overflow-hidden border border-[#c8a257]/25 shadow-2xl shadow-black/80 group">
               <img
-                src="/src/assets/images/chaasum_ambiance_forest_1794131817267.jpg"
+                src="/images/ambiance.jpg"
                 alt="Cozy dining interior of Chaasum Restaurant overlooking Sivok Hill Forest with ambient lanterns"
                 className="w-full h-[420px] sm:h-[520px] object-cover transition-transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"
                 loading="lazy"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src.indexOf('/images/ambiance.jpg') !== -1) {
+                    target.src = '/src/assets/images/chaasum_ambiance_forest_1794131817267.jpg';
+                  }
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
 
